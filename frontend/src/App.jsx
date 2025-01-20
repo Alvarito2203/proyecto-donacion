@@ -1,11 +1,10 @@
 import React from 'react';
-
+import Main from './pages/Main'; // Asegúrate de que la ruta sea correcta
 
 const App = () => {
   return (
     <div>
-      <h1>¡Hola Mundo!</h1>
-      <p>React y Vite están funcionando correctamente.</p>
+      <Main /> {/* Incluye el componente Main */}
     </div>
   );
 };

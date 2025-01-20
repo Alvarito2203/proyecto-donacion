@@ -1,16 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import '../styles/Navbar.css'; // Asegúrate de crear este archivo
 
-const Navbar = () => (
+const Navbar = () => {
+  return (
     <nav className="navbar">
-        <h1>Donaciones</h1>
-        <ul>
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/blog">Blog</Link></li>
-            <li><Link to="/sugerencias">Sugerencias</Link></li>
-            <li><Link to="/donar">Donar</Link></li>
-        </ul>
+      <div className="navbar-logo">
+        <img src="/assets/logo.png" alt="Where2Donate Logo" />
+      </div>
+      <ul className="navbar-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#suggestions">Sugerencias</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="#donate">Donar</a></li>
+      </ul>
+      <div className="navbar-auth">
+        <button className="auth-button">Iniciar Sesión</button>
+        <button className="auth-button">Registrarse</button>
+      </div>
     </nav>
-);
+  );
+};
 
 export default Navbar;
