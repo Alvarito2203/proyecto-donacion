@@ -1,0 +1,27 @@
+.header {
+    background: linear-gradient(to bottom, #ff80ab, #ff4081);
+    text-align: center;
+    color: white;
+    padding: 4rem 2rem;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-donate {
+    background-color: white;
+    color: #ff4081;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
