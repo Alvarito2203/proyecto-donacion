@@ -2,48 +2,77 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ff4081;
-  padding: 1rem 2rem;
-  color: white;
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo translúcido */
+  padding: 15px 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  height: 60px;
+  transition: transform 0.3s;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.1);
 }
 
 .navbar-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 30px;
+  list-style: none;
 }
 
-.navbar-links li a {
+.navbar-links a {
   text-decoration: none;
+  font-size: 16px;
+  color: #5a5a5a;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #d81b60;
+}
+
+.navbar-active {
+  background-color: #f06292;
   color: white;
-  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(216, 27, 96, 0.3);
+}
+
+.navbar-auth {
+  display: flex;
+  gap: 15px;
 }
 
 .navbar-auth button {
-  margin-left: 10px;
-  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn-login {
-  background-color: white;
-  color: #ff4081;
+  background-color: #f8bbd0;
+  color: #880e4f;
+}
+
+.btn-login:hover {
+  background-color: #f48fb1;
 }
 
 .btn-register {
-  background-color: #ff80ab;
+  background-color: #f06292;
   color: white;
+}
+
+.btn-register:hover {
+  background-color: #e91e63;
 }

@@ -1,27 +1,44 @@
 .header {
-    background: linear-gradient(to bottom, #ff80ab, #ff4081);
-    text-align: center;
-    color: white;
-    padding: 4rem 2rem;
-  }
-  
-  .header-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .header-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .btn-donate {
-    background-color: white;
-    color: #ff4081;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+  background: linear-gradient(135deg, #ffe0e6, #f06292);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.header-content .highlight {
+  color: #f8bbd0;
+  font-style: italic;
+}
+
+.header-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #f8e1e7;
+}
+
+.btn-donate {
+  background-color: #d81b60;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-donate:hover {
+  background-color: #ad1457;
+  transform: scale(1.05);
+}
