@@ -1,37 +1,103 @@
+/* Fondo del footer */
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  background: linear-gradient(135deg, #ff80ab, #ff4081);
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Parte superior del footer */
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo y descripción */
+.footer-logo {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffe0e9;
+}
+
+/* Enlaces */
+.footer-links {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffe0e9;
+}
+
+/* Redes sociales */
+.footer-social {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffe0e9;
+  transform: scale(1.2);
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffe0e9;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
   }
-  
-  .footer-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+
+  .footer-logo, .footer-links, .footer-social {
+    margin-bottom: 20px;
   }
-  
-  .footer-links li a {
-    text-decoration: none;
-    color: #ff80ab;
-  }
-  
-  .footer-social a {
-    margin: 0 10px;
-    color: #ff80ab;
-    text-decoration: none;
-  }
-  
-  .footer-bottom {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
-  
+}
